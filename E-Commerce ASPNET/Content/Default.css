@@ -1,0 +1,39 @@
+﻿body {
+    background-color: #343a40; 
+    color: #fff; 
+}
+
+.card {
+    background-color: #212529; 
+    border: none; 
+}
+
+.fixed-card {
+    width: 500px; 
+    height: 700px; 
+    margin: 0 auto; 
+}
+
+.card-title {
+    color: #fff; 
+}
+
+.card-text {
+    color: #ccc; 
+}
+
+.btn-primary {
+    background-color: #6c757d;
+    border-color: #6c757d; 
+    color: #fff; 
+}
+
+    .btn-primary:hover {
+        background-color: #495057; 
+    }
+
+
+.mb-4 {
+    margin-bottom: 1rem; 
+}
+

@@ -1,0 +1,55 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="E_Commerce_ASPNET.Site" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/Default.css" rel="stylesheet" />
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+        
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="Default.aspx">
+                <img src="Content/img/logo.png"/ width="66px">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <asp:HyperLink ID="Home" runat="server" NavigateUrl="Default.aspx" CssClass="nav-link">Home</asp:HyperLink>
+                    </li>
+                    <li class="nav-item">
+                        <asp:HyperLink ID="Prodotti" runat="server" NavigateUrl="Default.aspx" CssClass="nav-link">Prodotti</asp:HyperLink>
+                    </li>
+                    <li class="nav-item">
+                        <asp:HyperLink ID="Dettagli" runat="server" NavigateUrl="Dettagli.aspx" CssClass="nav-link">Dettagli</asp:HyperLink>
+                    </li>
+                    <li class="nav-item">
+                        <asp:HyperLink ID="Carrello" runat="server" NavigateUrl="Carrello.aspx" CssClass="nav-link">Carrello</asp:HyperLink>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</header>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        
+    </form>
+    <script src="Scripts/bootstrap.min.js"></script>
+</body>
+
+</html>
